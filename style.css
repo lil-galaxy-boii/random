@@ -4,4 +4,8 @@
 
 h1 {
     text-align: center;
+    color: red;
+}
+body {
+    background-image: url(https://kbmod.com/wp-content/uploads/2015/03/10-620x350.jpg);
 }

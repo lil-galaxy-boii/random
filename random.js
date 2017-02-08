@@ -4,24 +4,56 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createFirstScene() {
-    
-}
 
+function createFirstScene() {
+        var cheese = Math.random()
+if(cheese < 1) {  makeImage("https://www.walldevil.com/wallpapers/a18/thumb/abstract-backgrounds-desktop-background-cool-wallpaper-pattern-contour-tocool-back-lines.jpg", 0, 0, 300, 200, 1); 
+  makeCircle(100, 50, 40, "blue", 1.0);
+makeCircle(90, 40, 30, "magenta", 1.0);
+makeCircle(80, 40, 10, "black");
+makeCircle(120, 60, 10, "yellow");
+makeCircle(80, 40, 5, "yellow");
+makeCircle(120, 60, 5, "black");
+makeRect(50, 80, 130, 6, "green");
+makeText ("i have seen hell", 30, 10, 5);
+makeText ("please send me a cheeseburger", 130, 20, 5);
+    
+
+} else if (cheese < 2) {
+}
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    makeImage("http://www.pixelstalk.net/wp-content/uploads/2016/10/Download-Aesthetic-Images-HD.jpg", 0, 0, 300, 170, 1);
+makeRect(40, 50, 18, 30, "red");
+makeCircle(40, 50, 10, "hotpink");
+makeCircle(40, 50, 7, "orange");
+makeCircle(40, 50, 3, "lime");
+makeRect(45, 59, 12, 4, "darkblue");
+makeText ("what is the meaning of life", 20, 36, 3);
+makeText ("im george washing machine", 0, 65, 3);
     
 }
-
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeImage(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReY37TATLto85OzFon6T2wQnbDVn5BnjH5ZvJ49rN7rm0_9khO", 0, 0, 300, 200, 1);
+    makeEllipse (170, 70, 20, 10, "cyan");
+makeCircle(170, 70, 6, "pink");
+makeCircle(170, 70, 3, "red");
+makeCircle(170, 70, 2, "blue");
+makeCircle(170, 70, 1, "green");
+makeText ("i am an egg what are you", 150, 56, 4);
+
+makeCircle(10, 130, 40, "white");
+makeCircle(10, 131, 40, "black", 0.25);
+makeRect (10, 99, 4, 2, "red");
+makeText ("help me im trapped in sadness", 36, 98, 4);
 }
 
 
@@ -32,19 +64,22 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var elephantus = Math.random()
+    if (elephantus < 0.33){
+        createFirstScene()
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
+        } else if (elephantus < 0.67){
+createSecondScene()
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
+        } else {
+createThirdScene()
     
     
     // Else, call the function to create your third scene.
     
     
-    
+        }
 }
 
 
